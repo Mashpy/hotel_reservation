@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 02, 2014 at 11:10 PM
--- Server version: 5.5.27
+-- Generation Time: Apr 05, 2014 at 02:48 PM
+-- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
@@ -18,6 +18,40 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Database: `hotel_reservation`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `about`
+--
+
+CREATE TABLE IF NOT EXISTS `about` (
+  `about` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `about`
+--
+
+INSERT INTO `about` (`about`) VALUES
+('Maijdee Avenue, Noakhali District hotel');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `address`
+--
+
+CREATE TABLE IF NOT EXISTS `address` (
+  `address` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `address`
+--
+
+INSERT INTO `address` (`address`) VALUES
+('this is address					');
 
 -- --------------------------------------------------------
 
@@ -72,6 +106,28 @@ INSERT INTO `customer_info` (`custo_id`, `name`, `email`, `address`) VALUES
 (6, 'dfd', 'A@GMAIL.COM', 'dfd'),
 (7, 'df', 'niloy.cste@gmail.com', 'sdf'),
 (8, 'sdfsdf', 'A@GMAIL.COM', 'sdf');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `message`
+--
+
+CREATE TABLE IF NOT EXISTS `message` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` text NOT NULL,
+  `email` text NOT NULL,
+  `subject` text NOT NULL,
+  `message` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `message`
+--
+
+INSERT INTO `message` (`id`, `name`, `email`, `subject`, `message`) VALUES
+(1, 'mashpy', 'ohonab@gmail.com', 'agdg', 'segfdfhg');
 
 -- --------------------------------------------------------
 
