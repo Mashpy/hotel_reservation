@@ -75,7 +75,7 @@ require "connect.php";
 			if($strAvailable==0){
 				echo "sorry no availble";
 			}else{
-			echo "<a href = 'sajib.php?reserv_id=$id && room_type=$strTitle && price=$strPrice'>Click Here</a><br />";
+			echo "<a href = 'booking.php?reserv_id=$id && room_type=$strTitle && price=$strPrice'>Click Here</a><br />";
 			}
 			}
 					

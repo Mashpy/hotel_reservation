@@ -99,7 +99,7 @@ echo '</td>';
 
 
 	$Link='<input name="autoid" type="image" value="' .$row["auto-id"]. '" src="img/reseve1.jpg" alt="Reserve" align="middle" width="60" height="30" />';
-	echo "<a href = 'sajib.php?auto_id=$auto_id&& arival=$arival&& departure=$departure && nights=$numberofnights && room_type_name=$r'>".$Link."</a>";
+	echo "<a href = 'booking.php?auto_id=$auto_id&& arival=$arival&& departure=$departure && nights=$numberofnights && room_type_name=$r'>".$Link."</a>";
 		
 	
 	
