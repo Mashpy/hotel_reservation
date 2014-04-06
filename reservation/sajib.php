@@ -119,7 +119,7 @@ $departure = $_GET['departure'];
 					Email:<br>
 					<input type="email" name="email" id="boxy" required validationMessage="Please select movie" /><br>
 					Contact Number:<br>
-					<input type="number" min="1" max="15" name="contact" id="boxy" required validationMessage="Please select movie" /><br>
+					<input type="number" pattern="\d{14}" name="contact" id="boxy" required validationMessage="Please select movie" /><br>
 					<input type="hidden" name="start" value="<?php echo $arival; ?>" >
 					<input type="hidden" name="auto_id" value="<?php echo $auto_id; ?>" >
 					<input type="hidden" name="price" value="<?php echo $price; ?>" >
